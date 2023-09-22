@@ -39,3 +39,7 @@ button:hover {
 .container {
     padding-left: 30%;
 }
+
+.item-box.first {
+    margin-left: 200px;
+}

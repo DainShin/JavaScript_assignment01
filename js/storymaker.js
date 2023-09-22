@@ -8,6 +8,7 @@ const verb = document.getElementById("verb");
 const adjective = document.getElementById("adjective");
 const noun2 = document.getElementById("noun2");
 const setting = document.getElementById("setting");
+const stuButton = document.getElementById("stuButton");
 
 // Constants for p tag to display query selectors
 const choosenNoun1 = document.getElementById("choosenNoun1");
@@ -44,8 +45,7 @@ function noun1_on_click() {
     noun1Cnt = Math.floor(Math.random()* nouns1.length);
     choosenNoun1.textContent = nouns1[noun1Cnt];
     
-
-    // if-else to change count setting
+    // if-else to change count setting??
 }
 
 function verb_on_click() {
@@ -84,6 +84,12 @@ function random_on_click() {
     playback_on_click();
 }
 
+function stuinfo_on_click() {
+    var stuInfo = "200535561 / DainShin";
+    var studentId = document.getElementById('studentId');
+    studentId.textContent = stuInfo;
+}
+
 /* Event Listeners
 -------------------------------------------------- */
 noun1.addEventListener("click", noun1_on_click);
@@ -93,3 +99,4 @@ noun2.addEventListener("click", noun2_on_click);
 setting.addEventListener("click", setting_on_click);
 playback.addEventListener("click", playback_on_click);
 random.addEventListener("click", random_on_click);
+stuButton.addEventListener("click", stuinfo_on_click);
